@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Reservas</title>
+        <title>Fale conosco</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../assets/css/faleconosco.css">
     </head>
@@ -9,10 +9,10 @@
         <section id="teste">
             <div id="container">
                 <ul>
-                    <li><a href = "../principal.html">Home</a></li>
-                    <li><a href = "../Cardápio/cardapio.html">Cardápio</a></li>
-                    <li><a href = "../Reserve sua mesa/reserva.html">Reserve sua mesa</a></li>
-                    <li><a href = "../Fale conosco/faleconosco.html">Fale conosco</a></li>
+                    <li><a href = "../index.html">Home</a></li>
+                    <li><a href = "../cardapio/index.html">Cardápio</a></li>
+                    <li><a href = "../reservas/index.html">Reserve sua mesa</a></li>
+                    <li><a href = "../faleconosco/index.html">Fale conosco</a></li>
                 </ul>
                 <div id="linha"></div>
             </div>
@@ -36,9 +36,15 @@
                     <label class="label" for="Mensagem">Mensagem</label>
                 </div>
                 <div class="form-item">
-                    <input class="botao" type="submit" value="Enviar"/>
+                    <input class="botao" type="submit" value="Enviar" onclick="confirmacao()"/>
                 </div>
             </form>
         </div>
+        <script>
+            function confirmacao(msg) {
+                msg = window.alert('Sua mensagem foi enviada com sucesso!')
+                return msg
+            }
+        </script>
     </body>
 </html>
